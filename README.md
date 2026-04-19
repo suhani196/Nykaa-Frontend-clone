@@ -7,7 +7,7 @@ Built using HTML, CSS, and Vanilla JavaScript with real e-commerce interactions 
 
 🌟 Live Demo
 
-Add your deployed link here (GitHub Pages / Vercel)
+https://suhani196.github.io/Nykaa-Frontend-clone/
 
 🧠 What You’ll Learn From This Project
 DOM rendering from JavaScript arrays
