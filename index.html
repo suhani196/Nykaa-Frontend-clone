@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nykaa+ — Beauty & Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <svg class="logo-svg" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="4" y="50" font-family="'Playfair Display', serif" font-weight="700" font-size="52" fill="#FF2D7C" letter-spacing="-1">Nykaa</text>
+          <text x="172" y="30" font-family="'DM Sans', sans-serif" font-weight="600" font-size="20" fill="#FF2D7C">+</text>
+        </svg>
+      </a>
+      <div class="nav-search">
+        <span class="search-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+        <input type="text" placeholder="Search for Lipsticks, Serums, Skincare…" class="search-input" id="searchInput" />
+      </div>
+      <div class="nav-icons">
+        <button class="icon-btn" title="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+        <button class="icon-btn" id="cartBtn" title="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="cat-strip">
+      <a href="#categories" class="cat-link">Makeup</a>
+      <a href="#categories" class="cat-link">Skincare</a>
+      <a href="#categories" class="cat-link">Hair</a>
+      <a href="#categories" class="cat-link">Bath &amp; Body</a>
+      <a href="#categories" class="cat-link">Fragrances</a>
+      <a href="#categories" class="cat-link">Luxury</a>
+      <a href="#categories" class="cat-link">Men</a>
+      <a href="#categories" class="cat-link">Wellness</a>
+    </div>
+  </nav>
+
+  <section class="hero-slider" id="hero">
+    <div class="slides-track" id="slidesTrack"></div>
+    <button class="slider-btn slider-prev" id="sliderPrev">&#8592;</button>
+    <button class="slider-btn slider-next" id="sliderNext">&#8594;</button>
+    <div class="slider-dots" id="sliderDots"></div>
+    <div class="hero-ticker">
+      <span>✦ Free Shipping on orders above ₹299 &nbsp;&nbsp; ✦ 100% Authentic Products &nbsp;&nbsp; ✦ Easy 15-Day Returns &nbsp;&nbsp; ✦ 2100+ Premium Brands &nbsp;&nbsp; ✦ Free Shipping on orders above ₹299 &nbsp;&nbsp; ✦ 100% Authentic Products &nbsp;&nbsp; ✦ Easy 15-Day Returns &nbsp;&nbsp; ✦ 2100+ Premium Brands</span>
+    </div>
+  </section>
+
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Shop By Category</h2>
+        <a href="#" class="see-all">See All →</a>
+      </div>
+      <div class="categories-grid">
+        <a href="#" class="cat-card" style="--cat-color:#FFE4F0;--cat-accent:#FF2D7C">
+          <div class="cat-icon"><svg viewBox="0 0 80 80" fill="none" width="60"><circle cx="40" cy="40" r="30" fill="#FF2D7C" opacity="0.15"/><circle cx="40" cy="38" r="14" fill="url(#mg)"/><circle cx="40" cy="38" r="5" fill="#FF2D7C"/><defs><linearGradient id="mg" x1="26" y1="24" x2="54" y2="52"><stop stop-color="#FFB3D1"/><stop offset="1" stop-color="#FF2D7C"/></linearGradient></defs></svg></div>
+          <p class="cat-name">Makeup</p><p class="cat-count">1,200+ products</p>
+        </a>
+        <a href="#" class="cat-card" style="--cat-color:#E8F4FF;--cat-accent:#4A90D9">
+          <div class="cat-icon"><svg viewBox="0 0 80 80" fill="none" width="60"><circle cx="40" cy="40" r="30" fill="#4A90D9" opacity="0.12"/><rect x="28" y="20" width="24" height="38" rx="8" fill="url(#sg)"/><defs><linearGradient id="sg" x1="28" y1="20" x2="52" y2="58"><stop stop-color="#BAE6FD"/><stop offset="1" stop-color="#4A90D9"/></linearGradient></defs></svg></div>
+          <p class="cat-name">Skincare</p><p class="cat-count">900+ products</p>
+        </a>
+        <a href="#" class="cat-card" style="--cat-color:#FFF3E0;--cat-accent:#F59E0B">
+          <div class="cat-icon"><svg viewBox="0 0 80 80" fill="none" width="60"><circle cx="40" cy="40" r="30" fill="#F59E0B" opacity="0.12"/><path d="M32 30 Q40 10 48 30 Q44 50 40 52 Q36 50 32 30Z" fill="url(#hg)"/><defs><linearGradient id="hg" x1="32" y1="10" x2="48" y2="52"><stop stop-color="#FDE68A"/><stop offset="1" stop-color="#F59E0B"/></linearGradient></defs></svg></div>
+          <p class="cat-name">Hair</p><p class="cat-count">600+ products</p>
+        </a>
+        <a href="#" class="cat-card" style="--cat-color:#F0FFF4;--cat-accent:#34D399">
+          <div class="cat-icon"><svg viewBox="0 0 80 80" fill="none" width="60"><circle cx="40" cy="40" r="30" fill="#34D399" opacity="0.12"/><rect x="26" y="26" width="28" height="32" rx="6" fill="url(#bg)"/><defs><linearGradient id="bg" x1="26" y1="26" x2="54" y2="58"><stop stop-color="#6EE7B7"/><stop offset="1" stop-color="#059669"/></linearGradient></defs></svg></div>
+          <p class="cat-name">Bath &amp; Body</p><p class="cat-count">400+ products</p>
+        </a>
+        <a href="#" class="cat-card" style="--cat-color:#FDF4FF;--cat-accent:#A855F7">
+          <div class="cat-icon"><svg viewBox="0 0 80 80" fill="none" width="60"><circle cx="40" cy="40" r="30" fill="#A855F7" opacity="0.12"/><rect x="36" y="25" width="8" height="28" rx="4" fill="url(#fg)"/><defs><linearGradient id="fg" x1="36" y1="25" x2="44" y2="53"><stop stop-color="#E9D5FF"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs></svg></div>
+          <p class="cat-name">Fragrances</p><p class="cat-count">250+ products</p>
+        </a>
+        <a href="#" class="cat-card" style="--cat-color:#FFFBEB;--cat-accent:#D97706">
+          <div class="cat-icon"><svg viewBox="0 0 80 80" fill="none" width="60"><circle cx="40" cy="40" r="30" fill="#D97706" opacity="0.12"/><rect x="24" y="28" width="32" height="26" rx="5" fill="url(#luxg)"/><defs><linearGradient id="luxg" x1="24" y1="28" x2="56" y2="54"><stop stop-color="#FDE68A"/><stop offset="1" stop-color="#D97706"/></linearGradient></defs></svg></div>
+          <p class="cat-name">Luxury</p><p class="cat-count">150+ products</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Hot Deals &amp; Collections</h2>
+        <a href="#" class="see-all">View All →</a>
+      </div>
+      <div class="promo-grid" id="promoGrid"></div>
+    </div>
+  </section>
+
+  <section class="deals-banner">
+    <div class="deals-inner container">
+      <div class="deal-tag">⚡ Deals of the Day</div>
+      <p class="deal-title">Mega Weekend Sale — <strong>Up to 60% Off</strong></p>
+      <p class="deal-sub">Only for today. Don't miss out!</p>
+      <a href="#products" class="btn btn-white">Shop Deals →</a>
+    </div>
+  </section>
+
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Products</h2>
+        <a href="#" class="see-all">View All →</a>
+      </div>
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="skincare">Skincare</button>
+        <button class="filter-tab" data-filter="makeup">Makeup</button>
+        <button class="filter-tab" data-filter="hair">Hair</button>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <section class="brands-section">
+    <div class="container">
+      <p class="brands-label">Trusted Brands We Carry</p>
+      <div class="brands-row">
+        <span class="brand-pill">Cetaphil</span><span class="brand-pill">Dot &amp; Key</span>
+        <span class="brand-pill">Hyphen</span><span class="brand-pill">Pilgrim</span>
+        <span class="brand-pill">Lakmé</span><span class="brand-pill">Vaseline</span>
+        <span class="brand-pill">SKIN1004</span><span class="brand-pill">Swiss Beauty</span>
+        <span class="brand-pill">medicube</span><span class="brand-pill">Round Lab</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="container benefits-grid">
+      <div class="benefit-item"><div class="benefit-icon">🚚</div><p class="benefit-title">Free Shipping</p><p class="benefit-sub">Above ₹299</p></div>
+      <div class="benefit-item"><div class="benefit-icon">↩️</div><p class="benefit-title">Easy Returns</p><p class="benefit-sub">15 Days</p></div>
+      <div class="benefit-item"><div class="benefit-icon">✅</div><p class="benefit-title">100% Authentic</p><p class="benefit-sub">Verified Products</p></div>
+      <div class="benefit-item"><div class="benefit-icon">🏪</div><p class="benefit-title">2100+ Brands</p><p class="benefit-sub">1.3L Products</p></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo-text">Nykaa+</p>
+        <p class="footer-tagline">Beauty, Wellness &amp; More — Delivered to Your Door.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn">IG</a><a href="#" class="social-btn">FB</a>
+          <a href="#" class="social-btn">YT</a><a href="#" class="social-btn">TW</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <p class="footer-col-title">Shop</p>
+        <a href="#">Makeup</a><a href="#">Skincare</a><a href="#">Hair</a><a href="#">Luxury</a><a href="#">New Arrivals</a>
+      </div>
+      <div class="footer-links">
+        <p class="footer-col-title">Help</p>
+        <a href="#">Track Order</a><a href="#">Returns &amp; Refunds</a><a href="#">FAQs</a><a href="#">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <p class="footer-col-title">About</p>
+        <a href="#">About Nykaa</a><a href="#">Careers</a><a href="#">Press</a><a href="#">Sustainability</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© 2026 Nykaa+ — All rights reserved. Rebuilt with ❤️ by <strong style="color:var(--pink)">Suhani</strong>.</p>
+      <p class="disclaimer">⚠️ Beware of fraudsters posing as Nykaa representatives.</p>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>My Bag 🛍️</h3>
+      <button class="cart-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Your bag is empty. Start shopping!</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">Total: <strong id="cartTotal">₹0</strong></div>
+      <button class="btn btn-primary" style="width:100%">Proceed to Checkout</button>
+    </div>
+  </aside>
+  <div class="toast" id="toast"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
